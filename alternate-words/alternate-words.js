@@ -5,7 +5,7 @@ function isAlt(word) {
     let prevIsVowel = vowels.includes(word[0]);
 
     for (let i = 0; i < word.length; i++) {
-        let letter = word[i];
+        const letter = word[i];
 
         if (vowels.includes(letter) === prevIsVowel) return false;
 
